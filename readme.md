@@ -1,5 +1,33 @@
 # Virtual-Memory-Implementation-in-MOS(Multiprogramming Operating System)
 
+
+## MOS(Multiprogramming Operating System)
+- Used for execution of multiple jobs
+- Job should be defined ,well structured.
+- System Will Report Error ,For Wrong Jobs With Proper Error Messages.
+- Series of Jobs should be kept in input.txt.
+- Afer processing of jobs output can be seen output.txt
+- Random memory allocation for program card used using paging.
+
+## Job can consist of Instruction
+- GD-Get Data
+- PD-Print Data
+- LR-Load Register From Memory
+- SR-Store Register From Memory
+- CR-Compare Register And Memory
+- BT-Branch Toggle(Checks Toggle Variable)
+- H- Denotes end of job.
+- Job should start with $AMJ
+- There is $DTA after declaration of program cards
+  and before data cards
+- Job should end with $END
+
+
+## Tools used
+- Gcc compiler
+- Emacs
+- Gdb
+
 ## Simulation of a Paging System:
 
 In this simulation, consider a *memory location* to be an atomic unit, that is, the smallest possible unit we care to consider. Thus, in a system with a page size of 2, there are two memory locations on each page.
